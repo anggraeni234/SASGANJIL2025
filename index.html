@@ -1,44 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Kalkulator Total Belanja</title>
-  
-
-  <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Perhitungan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>kalkulator Total Belanja</h1>
-    <img src="foto/kemeja.jpg" alt="foto kemeja" width="100">
-    <h3>kemeja perempuan</h3>
-    
-  <form id="formbaju">
-    <label for="Harga">Harga per
-    pcs (Rp):</label>
-    <input type="text" name="" id="harga" value=150000>
-    <br><br>
-    
-    <label>jumlah pesanan :</label>
-    <input type="number" name="" id="jumlah" placeholder="masukkan jumlah">
-    <br><br>
-    <label>Diskon (%) :</label>
-  <input type="number" name="" id="diskon" value="5">
-  <br><br>
-
-  
-    <button type="button" onclick="hitung()">Hitung Total</button>
-        <button onclick="resetbarang()">Reset</button>    
-  </form>
-  
-  <h3 id="hasil"></h3>
-  </div>
-
-  <script src="main.js"></script>
+    <div class="container">
+        
+        <h1>Program Perhitungan</h1>
+        <div class="menu-list">
+            <a href="barang.html"><button class="menu-item">Hitung Harga Barang</button></a>
+            <a href="beratbadan.html"><button class="menu-item">Hitung Berat Badan</button></a>
+            <a href="zakat.html"> <button class="menu-item">Hitung Zakat Penghasilan</button></a>
+            
+            <div id="content-area">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1><b>PILIH MENU</b></h1>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

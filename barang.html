@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kalkulator Total Belanja</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>kalkulator Total Belanja</h1>
+    <img src="foto/kemeja.jpg" alt="foto kemeja" width="100">
+    <h3>kemeja perempuan</h3>
+    
+  <form id="formbaju">
+    <label for="Harga">Harga per
+    pcs (Rp):</label>
+    <input type="text" name="" id="harga" value=150000>
+    <br><br>
+    
+    <label>jumlah pesanan :</label>
+    <input type="number" name="" id="jumlah" placeholder="masukkan jumlah">
+    <br><br>
+    <label>Diskon (%) :</label>
+  <input type="number" name="" id="diskon" value="5">
+  <br><br>
+
+  
+    <button type="button" onclick="hitung()">Hitung Total</button>
+        <button onclick="resetbarang()">Reset</button>    
+  </form>
+  
+  <h3 id="hasil"></h3>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
