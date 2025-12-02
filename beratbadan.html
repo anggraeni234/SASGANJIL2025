@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator BMI (Body Mass Index)</title>
- <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kalkulator BMI</title>
+  
+
+  <link rel="stylesheet" href="style1.css">
+  
 </head>
+
 <body>
+<div class="container">
+  <h2>Kalkulator BMI</h2>
 
-    <div class="container">
-        <h1>Kalkulator BMI</h1>
-        <hr>
+<!-- Pilih Jenis Kelamin -->
+<select id="gender">
+    <option value="Laki-laki">Laki-laki</option>
+    <option value="Perempuan">Perempuan</option>
+</select>
+<br>
 
-        <label for="berat">Berat Badan (kg):</label>
-        <input type="number" id="berat" placeholder="Contoh: 70" required min="1">
+<!-- Input Tinggi -->
+<input type="number" id="tinggi" placeholder="Tinggi (cm)"></input>
+<br>
 
-        <label for="tinggi">Tinggi Badan (cm):</label>
-        <input type="number" id="tinggi" placeholder="Contoh: 175" required min="1">
+<!-- Input Berat -->
+<input type="number" id="berat" placeholder="Berat (kg)"></input><br>
 
-        <button onclick="hitungBMI()">Hitung BMI</button>
-        <button onclick="resetBMI()">Reset</button>
-        <div id="hasil">
-            <p><strong>BMI Anda:</strong> <span id="nilaiBMI">-</span></p>
-            <p><strong>Kategori:</strong> <span id="kategoriBMI">-</span></p>
-        </div>
-    </div>
-       
-   >
-        <script src="main1.js"></script>
+<!-- Tombol -->
+<button onclick="hitungBMI()">Hitung BMI</button>
+
+
+ <br>
+<h3 id="hasil"></h3>
+
+
+</div>
+  <script src="main1.js"></script>
 </body>
 </html>

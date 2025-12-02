@@ -1,69 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
 
-.card {
-    background: white;
-    padding: 25px 30px;
-    border-radius: 10px;
-    width: 320px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 h2 {
-    margin-top: 0;
-    text-align: center;
-    color: #333;
-}
+        margin-bottom: 20px;
+    }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    box-sizing: border-box;
-}
+    select, input {
+        width: 200px;
+        padding: 10px;
+        margin: 8px 0;
+        font-size: 16px;
+    }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    margin-top: 8px;
-    box-sizing: border-box;
-}
-
-button:hover {
-    background: #2980b9;
-}
-
-#hasil {
-    margin-top: 15px;
-    padding: 10px;
-    background: #eee;
-    border-radius: 6px;
-    text-align: center;
-    font-weight: bold;
-}
-input,
-    select,
     button {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #bbb;
-      border-radius: 5px;
-      box-sizing: border-box;
+        width: 120px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+        background: #D579B6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    #hasil {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
     }

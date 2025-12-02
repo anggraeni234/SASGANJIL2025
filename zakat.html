@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Zakat Penghasilan</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kalkulator Zakat Penghasilan</title>
+  
+
+  <link rel="stylesheet" href="style2.css">
+  
 </head>
+
+
 <body>
+<div>
+<h2>Kalkulator Zakat Penghasilan</h2>
 
-<h2 class="judul">Kalkulator Zakat Penghasilan</h2>
+<input type="number" id="penghasilan" placeholder="Penghasilan bulanan (Rp)">
+<br>
+<input type="number" id="pengeluaran" placeholder="Pengeluaran pokok (Rp)">
+<br>
 
-<div class="card">
+<button onclick="hitungZakat()">Hitung Zakat</button>
+<button onclick="resetForm()">Reset</button>
 
-    <label>Penghasilan (Rp)</label>
-    <input type="number" id="gaji">
 
-    <label>Pengeluaran Pokok (Rp)</label>
-    <input type="number" id="pokok">
 
-    <div class="btn-dua">
-        <button onclick="hitungZakat()">Hitung Zakat</button>
-        <button onclick="resetZakat()">Reset</button>
-    </div>
+<div id="hasil-box" style="display:none;">
+    <h3>📊 HASIL PERHITUNGAN ZAKAT</h3>
+    <div id="hasil"></div>
+    
 
-    <div class="hasil-box">
-        <p id="hasilZakat">Hasil perhitungan akan tampil di sini...</p>
-    </div>
-
-   
 
 </div>
-
-<script src="main2.js"></script>
+   <script src="main2.js"></script>
 </body>
 </html>

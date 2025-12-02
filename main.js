@@ -57,4 +57,5 @@ hasil = " Nilai E (sangat jelek)"
 
 //tampilkan isi variabel "hasil" ke elemen "hasil" di html
 document.getElementById('hasil').innerText = hasil
+
 }

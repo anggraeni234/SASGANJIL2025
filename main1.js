@@ -1,35 +1,29 @@
 function hitungBMI() {
+    let tinggi = document.getElementById("tinggi").value;
+    let berat = document.getElementById("berat").value;
 
-            const berat = parseFloat(document.getElementById('berat').value);
-            const tinggiCM = parseFloat(document.getElementById('tinggi').value);
+    if (tinggi === "" || berat === "") {
+        alert("Mohon isi tinggi dan berat badan!");
+        return;
+    }
 
+    // Rumus BMI
+    let tinggiMeter = tinggi / 100;
+    let bmi = (berat / (tinggiMeter * tinggiMeter)).toFixed(1);
 
-            if (isNaN(berat) || isNaN(tinggiCM) || berat <= 0 || tinggiCM <= 0) {
-                alert('Mohon masukkan angka yang valid untuk Berat dan Tinggi Badan.');
-                document.getElementById('nilaiBMI').textContent = '-';
-                document.getElementById('kategoriBMI').textContent = '-';
-                return;
-            }
+    let kategori = "";
 
+    if (bmi < 18.5) kategori = "Kekurangan berat badan";
+    else if (bmi < 25) kategori = "Normal";
+    else if (bmi < 30) kategori = "Kelebihan berat badan";
+    else kategori = "Obesitas";
 
-            const tinggiMeter = tinggiCM / 100;
+    let saran = "30";
+    if (kategori === "Kelebihan berat badan" || kategori === "Obesitas") {
+        saran = " - Perlu olahraga teratur";
+    }
 
-
-            const bmi = berat / (tinggiMeter * tinggiMeter);
-
-
-            let kategori = '';
-            if (bmi < 18.5) {
-                kategori = 'Kurus (Kekurangan berat badan)';
-            } else if (bmi >= 18.5 && bmi <= 24.9) {
-                kategori = 'Normal (Ideal)';
-            } else if (bmi >= 25.0 && bmi <= 29.9) {
-                kategori = 'Kelebihan berat badan (Pre-obesitas)';
-            } else {
-                kategori = 'Obesitas';
-            }
-
-
-            document.getElementById('nilaiBMI').textContent = bmi.toFixed(2); // 
-            document.getElementById('kategoriBMI').textContent = kategori;
-        }
+    document.getElementById("hasil").innerHTML =
+        `BMI: ${bmi} (${kategori})${saran}`;
+        
+}
